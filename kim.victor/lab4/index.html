@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Управление блог-постами, тегами и комментариями." />
+    <meta
+      name="description"
+      content="Управление блог-постами, тегами и комментариями."
+    />
     <title>Блог-посты — лабораторная работа 4</title>
     <link rel="stylesheet" href="./styles.css" />
     <script type="module" src="./main.js"></script>
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__inner">
+      <div class="page-header-inner">
         <p class="eyebrow">Веб-программирование · Вариант 35</p>
         <h1>Мой блог</h1>
-        <p class="page-subtitle">Публикации, тематические теги и комментарии в одном месте.</p>
+        <p class="page-subtitle">
+          Публикации, тематические теги и комментарии в одном месте.
+        </p>
       </div>
     </header>
 
@@ -35,7 +40,12 @@
 
           <label class="field">
             <span>Заголовок</span>
-            <input name="title" type="text" placeholder="Название публикации" required />
+            <input
+              name="title"
+              type="text"
+              placeholder="Название публикации"
+              required
+            />
           </label>
 
           <label class="field">
@@ -43,20 +53,35 @@
             <input name="author" type="text" placeholder="Имя автора" />
           </label>
 
-          <label class="field field--wide">
+          <label class="field field-wide">
             <span>Текст публикации</span>
-            <textarea name="content" rows="4" placeholder="О чём ваша запись?"></textarea>
+            <textarea
+              name="content"
+              rows="4"
+              placeholder="О чём ваша запись?"
+            ></textarea>
           </label>
 
-          <label class="field field--wide">
+          <label class="field field-wide">
             <span>Теги</span>
-            <input name="tags" type="text" placeholder="javascript, web, learning" />
+            <input
+              name="tags"
+              type="text"
+              placeholder="javascript, web, learning"
+            />
             <small>Несколько тегов разделяйте запятыми.</small>
           </label>
 
-          <div class="form-actions field--wide">
-            <p data-testid="form-status" class="form-status" role="status" aria-live="polite"></p>
-            <button class="primary-button" type="submit">Добавить пост <span aria-hidden="true">＋</span></button>
+          <div class="form-actions field-wide">
+            <p
+              data-testid="form-status"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <button class="primary-button" type="submit">
+              Добавить пост <span aria-hidden="true">＋</span>
+            </button>
           </div>
         </form>
       </section>
@@ -69,7 +94,11 @@
           </div>
           <span class="section-number">02</span>
         </div>
-        <div data-testid="entity-list" class="post-list" aria-live="polite"></div>
+        <div
+          data-testid="entity-list"
+          class="post-list"
+          aria-live="polite"
+        ></div>
       </section>
 
       <footer class="page-footer">
